@@ -10,6 +10,28 @@
     right: -21%;
     z-index: -111;
 }
+.home-left-shape-img
+{
+    position: absolute;
+    z-index: -111;
+    left: -27%;
+    top: -22%;
+}
+.second-section
+{
+    margin-top: 110px !important;
+}
+.second-section .card
+{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
+}
+.second-section img
+{
+    margin-top: 13px;
+    margin-left:13px;
+}
+
 .description > .titre-name
 {
     font-family:'IBM Plex Serif', serif;
@@ -21,7 +43,8 @@
     font-weight: bolder;
     color: #FCB500;
 }
-.description .contact
+.description .contact,
+.second-section .card-title
 {
     font-family:'IBM Plex Mono', monospace;
     font-weight: bolder;
@@ -30,9 +53,14 @@
 {
     font-family:'IBM Plex Mono', monospace;
 }
-.description > .info
+.description > .info,
+.second-section .card-text
 {
     font-family: 'IBM Plex Sans', sans-serif;
     color: #0000009f;
     text-align: justify;
 }
+    .second-section .card-text
+    {
+        font-size: 13px;
+    }
