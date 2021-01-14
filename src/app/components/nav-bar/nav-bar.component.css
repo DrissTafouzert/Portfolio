@@ -1,0 +1,14 @@
+.nav-item:hover:after
+{
+    content: "";
+    border-bottom: 6px solid yellow;
+    position: absolute; 
+    bottom: 0;
+    width: 30px;
+    left: 89px;
+}
+
+.img-icon-navbar  img
+{
+    cursor: pointer;
+}

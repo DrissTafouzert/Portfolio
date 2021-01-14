@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&family=IBM+Plex+Serif&display=swap');
+.home-section
+{
+    margin-top: 5%;
+}
+.home-img
+{
+    position: absolute;
+    top: -21%;
+    right: -21%;
+    z-index: -111;
+}
+.description > .titre-name
+{
+    font-family:'IBM Plex Serif', serif;
+    font-weight: bolder;
+}
+.description > .titre-role
+{
+    font-family:'IBM Plex Mono', monospace;
+    font-weight: bolder;
+    color: #FCB500;
+}
+.description .contact
+{
+    font-family:'IBM Plex Mono', monospace;
+    font-weight: bolder;
+}
+.description .contact-adress
+{
+    font-family:'IBM Plex Mono', monospace;
+}
+.description > .info
+{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #0000009f;
+    text-align: justify;
+}
