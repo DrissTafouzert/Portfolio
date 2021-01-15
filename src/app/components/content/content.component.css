@@ -21,7 +21,8 @@
 {
     margin-top: 110px !important;
 }
-.second-section .card
+.second-section .card,
+.third-section .card
 {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
@@ -44,7 +45,8 @@
     color: #FCB500;
 }
 .description .contact,
-.second-section .card-title
+.second-section .card-title,
+.third-section .card-title
 {
     font-family:'IBM Plex Mono', monospace;
     font-weight: bolder;
@@ -54,13 +56,81 @@
     font-family:'IBM Plex Mono', monospace;
 }
 .description > .info,
-.second-section .card-text
+.second-section .card-text,
+.third-section .card-text
 {
     font-family: 'IBM Plex Sans', sans-serif;
     color: #0000009f;
     text-align: justify;
 }
-    .second-section .card-text
+    .second-section .card-text,
+    .third-section .card-text
     {
         font-size: 13px;
     }
+
+.side-shape-4,
+.side-shape-1
+{
+    position: absolute;
+    z-index: -111;
+}
+    .side-shape-4
+    {
+        right: -9%;
+        top: -14%;
+    }
+    .side-shape-1
+    {
+        top: -78%;
+        left: 20%;
+    }
+.section-titre::after
+{
+    content: "";
+    width: 60px;
+    color: yellow;
+    position: absolute;
+    background: #fcb500;
+    height: 10px;
+    display: block;
+}
+.projects-time-deploy
+{
+    color: gray;
+    font-size: 12px;
+}
+.third-section .btn-github,
+.third-section .btn-demo
+{
+    font-size: 12px;
+    color: black;
+}
+    .third-section .btn-github
+    {
+        border-color: black;
+        padding: 0;
+    }
+    .third-section .btn-github:hover
+    {
+        background-color: black;
+        color:white;
+    }
+    .third-section .btn-demo
+    {
+        background-color: #FCB500;
+        color: black;
+        font-weight: bolder;
+        padding: 0;
+    }
+.third-section .card-footer
+{
+    background-color: white;
+    border-top-color: white;
+}
+.third-section .btn-github img,
+.third-section .btn-demo img
+{
+    width: 25px;
+    height: 25px;
+}

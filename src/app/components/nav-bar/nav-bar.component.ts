@@ -14,8 +14,6 @@ export class NavBarComponent implements OnInit {
   }
   linkedinLogoEnter(event)
   {
-    console.log("event",event);
-    
     event.target.src="/assets/images/linkedin-icon-hover-2.png"    
   }
   linkedinLogoLeave(event)

@@ -27,7 +27,7 @@
     <img class="home-img" src="/assets/images/home-img.png" alt="">
 </div>
 </div>
-<div class="row my-lg-5 second-section">
+<div class="row my-lg-5 second-section position-relative">
     <div class="col-lg-4">
         <div class="card ">
             <div class="row ">
@@ -88,4 +88,55 @@
             </div>
         </div>
     </div>
+    <img class="side-shape-4" src="/assets/images/shape-4.png" alt="">
+    <img class="side-shape-1" src="/assets/images/shape-1.png" alt="">
 </div>
+<div class="row third-section mb-lg-5">
+    <div class="col-lg-12">
+        <h3 class="mt-lg-5 section-titre">Projects</h3>
+    </div>
+    <div class="col-lg-6 mt-lg-5">
+        <div class="card ">
+            <div class="row ">
+                <div class="col-lg-4 ">
+                   
+                </div>
+                <div class="col-lg-8">
+                    <div class="card-body">
+                        <h6 class="card-title d-inline-block">Reddit clone</h6>
+                        <span class="projects-time-deploy"> . Deployed 3 days ago</span>
+                        <p class="card-text">
+                            I am familiar with the linux environment, I can do continuous 
+                            deployment with Jenkins, Docker and container management with Docker-compose, 
+                            Docker Hub, Git, and GitHub.
+                            <br>
+                        </p> 
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-primary btn-github pr-2 mr-2"
+                                (mouseenter)="btnGitHubEnter($event)"
+                                (mouseleave)="btnGitHubLeave($event)">
+                            <span><img src="assets/images/github-icon.png" alt=""></span>  
+                            Front-end
+                        </button>
+                        <button class="btn btn-outline-primary btn-github pr-2 mr-2"
+                                (mouseenter)="btnGitHubEnter($event)"
+                                (mouseleave)="btnGitHubLeave($event)">
+                            <span><img src="assets/images/github-icon.png" alt=""></span>
+                            Back-end
+                        </button>
+                        <button class="btn btn-demo float-lg-right  pr-2 mr-2"
+                                (mouseenter)="btnDemoEnter($event)"
+                                (mouseleave)="btnDemoLeave($event)">
+                            <span><img src="assets/images/demo-icon.png" alt=""></span>
+                            Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+
+    </div>
+
+</div>  
