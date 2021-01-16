@@ -1,14 +1,24 @@
-.nav-item:hover:after
+.nav-item::after
 {
     content: "";
-    border-bottom: 6px solid yellow;
+    border-bottom: 6px solid #fcb500;
     position: absolute; 
     bottom: 0;
-    width: 30px;
-    left: 89px;
+    width: 0px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+.nav-item:hover:after
+{
+    width: 40px;
+    transition: all 0.5s;
 }
 
 .img-icon-navbar  img
 {
     cursor: pointer;
+}
+.navbar
+{
+    background-color: white;
 }

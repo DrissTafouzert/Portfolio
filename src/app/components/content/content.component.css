@@ -180,6 +180,12 @@
     width: 25px;
     height: 25px;
 }
+.third-section .sid-project-img img
+{
+    width: 100%;
+    height: 100px;
+
+}
 
 .fifth-section .row
 {

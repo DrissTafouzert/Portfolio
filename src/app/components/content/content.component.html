@@ -91,20 +91,20 @@
     <img class="side-shape-4" src="/assets/images/shape-4.png" alt="">
     <img class="side-shape-1" src="/assets/images/shape-1.png" alt="">
 </div>
-<div class="row third-section mb-lg-5">
+<div class="row third-section mb-lg-5" id="projects">
     <div class="col-lg-12">
         <h3 class="mt-lg-5 section-titre">Projects</h3>
     </div>
     <div class="col-lg-6 mt-lg-5">
         <div class="card ">
             <div class="row ">
-                <div class="col-lg-4 ">
+                <div class="col-lg-4 sid-project-img align-self-center">
                    
                 </div>
                 <div class="col-lg-8">
                     <div class="card-body">
                         <h6 class="card-title d-inline-block">Reddit clone</h6>
-                        <span class="projects-time-deploy"> . Deployed 3 days ago</span>
+                        <span class="projects-time-deploy"> . Deployed on Heroku</span>
                         <p class="card-text">
                             I am familiar with the linux environment, I can do continuous 
                             deployment with Jenkins, Docker and container management with Docker-compose, 
@@ -144,12 +144,45 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-6">
-
+    <div class="col-lg-6 mt-lg-5">
+        <div class="card ">
+            <div class="row ">
+                <div class="col-lg-4 sid-project-img align-self-center">
+                   <img src="/assets/images/project-portfolio-img.png" alt="">
+                </div>
+                <div class="col-lg-8">
+                    <div class="card-body">
+                        <h6 class="card-title d-inline-block">Portfolio</h6>
+                        <span class="projects-time-deploy"> . Deployed on Heroku</span>
+                        <p class="card-text">
+                            I am familiar with the linux environment, I can do continuous 
+                            deployment with Jenkins, Docker and container management with Docker-compose, 
+                            Docker Hub, Git, and GitHub.
+                            <br>
+                        </p>
+                        <div>
+                            <img class="mr-2" src="/assets/images/js-icon.png" width="20" height="20" alt="JavaScript" title="JavaScript" >
+                            <img class="mr-2" src="/assets/images/angular-icon.png" width="20" height="20" alt="Angular 10" title="Angular 10">
+                            <img class="mr-2" src="/assets/images/html-icon.png" width="20" height="20" alt="HTML 5" title="HTML 5">
+                            <img class="mr-2" src="/assets/images/css-icon.png" width="20" height="20" alt="CSS 3" title="CSS 3">
+                        </div> 
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-primary btn-github pr-2 mr-2"
+                                (mouseenter)="btnGitHubEnter($event)"
+                                (mouseleave)="btnGitHubLeave($event)">
+                            <span><img src="assets/images/github-icon.png" alt=""></span>  
+                            Repository
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>  
-<div class="row fourth-section align-items-center">
+<div class="row fourth-section align-items-center" id="skills">
     <div class="col-lg-12 mb-lg-5">
         <h3 class="mt-lg-5 section-titre">Skills</h3>
     </div>
@@ -230,7 +263,7 @@
 
     <img src="/assets/images/shape-3.png" class="shape-3" alt="">
 </div>
-<div class="row fifth-section position-relative">
+<div class="row fifth-section position-relative" id="contact"> 
     
     
         <img src="/assets/images/shape-5.png" class="shape-5" alt="">
