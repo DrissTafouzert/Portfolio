@@ -46,7 +46,8 @@
 }
 .description .contact,
 .second-section .card-title,
-.third-section .card-title
+.third-section .card-title,
+.fourth-section .description
 {
     font-family:'IBM Plex Mono', monospace;
     font-weight: bolder;
@@ -94,6 +95,30 @@
     background: #fcb500;
     height: 10px;
     display: block;
+}
+.skill-titre::before
+{
+    content: "";
+    width: 60px;
+    color: yellow;
+    position: absolute;
+    background: #fcb500;
+    height: 10px;
+    display: block;
+    left: -67px;
+    top: 14px;
+}
+    .fourth-section .skill-titre
+    {
+        transform: rotate(-90deg);
+        width: 123px;
+        left: -19px;
+        position: absolute;
+        top: 61px;
+    }
+.fourth-section .left-rotate-titre
+{
+    height: 265px;
 }
 .projects-time-deploy
 {
