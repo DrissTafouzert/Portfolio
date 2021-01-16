@@ -47,12 +47,14 @@
 .description .contact,
 .second-section .card-title,
 .third-section .card-title,
-.fourth-section .description
+.fourth-section .description,
+.fifth-section .description
 {
     font-family:'IBM Plex Mono', monospace;
     font-weight: bolder;
 }
-.description .contact-adress
+.description .contact-adress,
+.fifth-section .contact-info
 {
     font-family:'IBM Plex Mono', monospace;
 }
@@ -71,7 +73,10 @@
     }
 
 .side-shape-4,
-.side-shape-1
+.side-shape-1,
+.shape-3,
+.fifth-section .shape-5,
+.fifth-section .contact-img
 {
     position: absolute;
     z-index: -111;
@@ -85,6 +90,22 @@
     {
         top: -78%;
         left: 20%;
+    }
+    .shape-3
+    {
+        right: 0;   
+    }
+    .fifth-section .shape-5
+    {
+        width: 100%;
+        height: 203px;
+        top: 90px;
+    }
+    .fifth-section .contact-img
+    {
+        right: 0;
+        top: -34px;
+        width: 400px;
     }
 .section-titre::after
 {
@@ -159,3 +180,32 @@
     width: 25px;
     height: 25px;
 }
+
+.fifth-section .row
+{
+    margin-top: 265px;
+}
+.text-align-center
+{
+    text-align: center;
+}
+.fifth-section .contact-info ul li
+{
+    list-style: none;
+}   
+    .fifth-section .contact-info ul li img,
+    .copyright img
+    {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+    .fifth-section .contact-info ul li a
+    {
+        text-decoration:none;
+        color:black;
+    }
+    .fifth-section .contact-info ul li
+    {
+        margin-bottom: 10px;
+    }
