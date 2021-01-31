@@ -1,4 +1,6 @@
 import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,7 +10,7 @@ import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular
 export class NavBarComponent implements OnInit {
 
   @ViewChild('logoLinkedin') logoLinkedin :ElementRef
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
   }
@@ -27,6 +29,36 @@ export class NavBarComponent implements OnInit {
   githubLogoLeave(event)
   {
     event.target.src="/assets/images/github-icon.png"
+  }
+  clickNavItem(event)
+  {
+    let items=document.querySelector("nav-item")
+    items.classList.forEach(e=>
+      {
+        console.log(e);
+        
+      })
+  }
+  serviceSubreddit():Observable<any>
+  {
+    console.log("call ubreddit");
+    
+    return this.http.get("http://localhost:8080/api/subreddit");
+  }
+  getAllSubreddit()
+  {
+    console.log("call ubreddit 2");
+    this.serviceSubreddit().subscribe(
+      result=>{
+        console.log(result)
+        
+      },
+      error=>
+      {
+        console.log("ERROR",error);
+        
+      }
+    )
   }
 
 }

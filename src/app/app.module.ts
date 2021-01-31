@@ -22,7 +22,7 @@ import { ContentComponent } from './components/content/content.component'
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientTestingModule,
+    // HttpClientTestingModule,
     BsDropdownModule.forRoot(),
     BrowserAnimationsModule
   ],
