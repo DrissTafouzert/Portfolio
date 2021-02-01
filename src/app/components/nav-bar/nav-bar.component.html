@@ -1,18 +1,78 @@
-  <nav class="navbar navbar-expand-lg navbar-light  sticky-top" >
+<nav class="navbar navbar-expand-lg navbar-light  sticky-top" >
+  <a class="navbar-brand" href="localhost:4200">
+      <img width="50" height="50" src="/assets/images/logo.png" alt="Driss TAFOUZERT">
+  </a>
+  <button class="navbar-toggler" type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+          (click)="toggleCollapsed()" >
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div [ngClass]="{'collapse':collapsed, 'navbar-collapse':true}"
+       id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-5" >
+      <li class="nav-item active mx-2" >
+        <a class="nav-link" href="#home" >Home </a>
+        <span class="indicator-hover"></span>
+      </li>
+      <li class="nav-item mx-2">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item mx-2">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+     
+      <li class="nav-item mx-2">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      
+    </ul>
+    <div class="img-icon-navbar mt-4" >
+      <a href="https://www.linkedin.com/in/driss-tafouzert/" target="_blank">
+          <img src="/assets/images/linkedin-icon.png" 
+          width="30" height="30"
+          (mouseenter)="linkedinLogoEnter($event)"
+          (mouseleave)="linkedinLogoLeave($event)"
+          alt="Linkedin"   class="mx-3">
+      </a>
+      <a href="https://github.com/DrissTafouzert" target="_blank">
+          <img src="/assets/images/github-icon.png" 
+          width="30" height="30" 
+          (mouseenter)="githubLogoEnter($event)"
+          (mouseleave)="githubLogoLeave($event)"
+          alt="github" class="mx-3">
+      </a>
+      
+      <a href="#contact" class="btn btn-contact mx-3" >Contact</a>
+    </div>
+  </div>
+ 
+</nav>
+
+
+
+
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light  sticky-top" >
     <a class="navbar-brand" href="localhost:4200">
         <img width="50" height="50" src="/assets/images/logo.png" alt="Driss TAFOUZERT">
     </a>
     <button class="navbar-toggler" type="button" 
-    data-toggle="collapse" 
-    data-target="#navbarSupportedContent" 
-    aria-controls="navbarSupportedContent" 
-    aria-expanded="false" 
-    aria-label="Toggle navigation">
+            data-toggle="collapse" 
+            data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation" >
     <span class="navbar-toggler-icon"></span>
     </button>
   
     <div class="collapse navbar-collapse" 
-    id="navbarSupportedContent">
+         id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto ml-5" >
         <li class="nav-item active mx-2" (click)=clickNavItem($event)>
           <a class="nav-link" href="#"  >Home 
@@ -52,9 +112,9 @@
       </div>
     </div>
    
-  </nav>
+  </nav> -->
   
-  <!-- <div class="btn-group" dropdown>
+  <!-- <div class="btn-group mt-5" dropdown>
     <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
             aria-controls="dropdown-basic">
       Button dropdown <span class="caret"></span>

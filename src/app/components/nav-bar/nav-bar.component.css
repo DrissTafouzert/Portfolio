@@ -12,6 +12,7 @@
 {
     width: 40px;
     transition: all 0.5s;
+    
 }
 
 .img-icon-navbar  img
@@ -26,4 +27,22 @@
 {
     width: 40px;
     transition: all 0.5s;
+}
+
+@media screen and (max-width: 992px) 
+{
+    .nav-item:hover:after
+    {
+        width:0px;
+        border-bottom: 6px solid red;
+    }
+    .navbar-collapse
+    {
+        text-align: center;
+    }
+    .navbar-collapse ul
+    {
+        margin-left:0 !important;
+    }
+    
 }

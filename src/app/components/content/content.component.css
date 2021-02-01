@@ -7,7 +7,7 @@
 {
     position: absolute;
     top: -21%;
-    right: -21%;
+    right: -34%;
     z-index: -111;
 }
 .home-left-shape-img
@@ -137,6 +137,7 @@
         position: absolute;
         top: 61px;
     }
+
 .fourth-section .left-rotate-titre
 {
     height: 265px;
@@ -215,3 +216,34 @@
     {
         margin-bottom: 10px;
     }
+
+@media screen and (max-width: 992px) 
+{
+     .fifth-section .contact-img
+    {
+        right: 0;
+        top: 70px;
+        width: 235px;
+    }
+
+    .fourth-section .skill-titre
+    {
+        top: 132px;
+    }
+    .contact-info ul
+    {
+        width: 70%;
+        margin: auto;
+    }
+    
+    .shape-3
+    {
+        width: 20%;
+    }
+    .side-shape-4,
+    .side-shape-1
+    {
+        width: 40%;
+    }
+
+}

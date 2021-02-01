@@ -12,3 +12,7 @@
                 0px 1px 24px #fcb500;
     
 }
+body
+{
+    overflow-x:hidden;
+}
