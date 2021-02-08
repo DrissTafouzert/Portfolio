@@ -17,6 +17,11 @@
     left: -27%;
     top: -22%;
 }
+.home-section .contact-adress a
+{
+    text-decoration: none;
+    color: #212529;
+}
 .second-section
 {
     margin-top: 110px !important;
