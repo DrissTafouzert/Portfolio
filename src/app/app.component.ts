@@ -13,16 +13,11 @@ export class AppComponent implements OnInit, AfterViewInit
   }
   ngAfterViewInit(): void 
   {
-   this.loadingEnd()
+    
   }
   ngOnInit(): void 
   {
-    document.getElementById('content').style.display='none'
-  }
-  loadingEnd()
-  {
-    document.getElementById('content').style.display='block'
-    document.getElementById('onloading').style.display='none'
+    
   }
 
  
